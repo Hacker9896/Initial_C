@@ -1,24 +1,19 @@
-/* Code for address operator: pointers 
-		1.  &     adrress operator
-		2.  *     vlaue operator
-		3.	**    value operator
+/* code for address operator : pointers
+      1. &  adress operators 
+      2. * value operators
+      3. ** value operators 
 */
 
-# include<stdio.h>
-
-void main()
-{
-	int number;            // number will values
-	int *number_address;    // it will store only the address of other variables 
+#include <stdio.h>
+int main(){
+	int number;
+	int *number_address;
 	
-	printf("Enter the number = ");
-	scanf("%d", &number);
-	number_address = &number;			// passing the address of the number
+	printf("Enter the number =");
+	scanf("%d",&number);
+	number_address = &number;
 	
-	printf("Entered number is %d", number);
-	
-	printf("\nAddress of the number is %d", number_address);
-	
-	printf("\nEntered number is = %d", *number_address);	
+	printf("Entered number is %d\n",number);
+	printf("Address of the number is %d", number_address);
+	printf("\nEntered number is %d",*number_address);
 }
-
