@@ -1,0 +1,5 @@
+1. git init // for adding git folder in respo
+2. git add . // add all file for staging 
+3. git commit -m "comment"  // add a comment 
+4. git push -u origin respo_name.
+done..
