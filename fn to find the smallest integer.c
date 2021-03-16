@@ -25,30 +25,25 @@ Output
 */
 
 #include <stdio.h>
-void min(char array[50] , int time);
-
 int main(){
-	char array[50];
-	int time;
 	
-	printf("Enter the total number you want to sort =");
-	scanf("%d", &time);
+	int smallest, num, a[30], times,i;
 	
-	min(array[50],time);
-}
+	printf("Enter total number you want to sort = ");
+	scanf("%d",&times);
+	
 
-void min(char array[50] , int time){
-	int i ;
-	int small;
-	for (i =0; i<time; i++){
-		printf("Enter the number =");
-			scanf("%s",&array[i]);
-			if(i > i+1){
-				small = i;
-			}else{
-				small = i+1;
-			}
-		}
+	for(i=0; i<times; i++){
+		scanf("%d",&a[i]);
+	}
 	
-	printf("%d",small);
+	smallest = a[0];
+	
+	for(i=1 ; i<times; i++){
+		if(a[i] < smallest){
+			smallest = a[i];
+		}
+	}
+	
+	printf("Smallest number is : %d",smallest);
 }
